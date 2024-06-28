@@ -1,5 +1,5 @@
 import { Button, Navbar, TextInput } from "flowbite-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 
@@ -39,19 +39,21 @@ function Header() {
           <FaMoon />
         </Button>
         <Link>
-          <Button gradientMonochrome="cyan">Sign In</Button>
+          <Button gradientMonochrome="cyan" outline>
+            Sign In
+          </Button>
         </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link to="/"> Home</Link>
+          <NavLink to="/"> Home</NavLink>
         </Navbar.Link>
         <Navbar.Link active={path === "/About"} as={"div"}>
-          <Link to="/About">Abouts </Link>
+          <NavLink to="/About">Abouts </NavLink>
         </Navbar.Link>
         <Navbar.Link active={path === "/Projects"} as={"div"}>
-          <Link to="/Projects">Projects </Link>
+          <NavLink to="/Projects">Projects </NavLink>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
