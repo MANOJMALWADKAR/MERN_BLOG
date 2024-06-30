@@ -27,3 +27,24 @@
 # Create User Modal
 
 -- User.model.js
+// Define the user schema
+// Create the user model from the schema
+
+# create test API
+
+-- user.routes.js
+// Creates user Routes
+
+-- user.controoler.js
+// here all logic functions related api comes here
+
+# Create SignUp API Route
+
+-- create auth.route.js and add route to it
+(router.post('/signip',signup))
+
+-- create auth.controller.js
+// here add logic function for signup functionality
+
+-- npm i bcryptjs -- hash passsword
+// const hashPassword = bcryptjs.hashSync(password, 10)
