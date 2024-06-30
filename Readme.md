@@ -48,3 +48,11 @@
 
 -- npm i bcryptjs -- hash passsword
 // const hashPassword = bcryptjs.hashSync(password, 10)
+
+# Add Middleware and function to handle error
+
+-- error.js
+-- middleware
+//app.use((err, req, res, next) => {
+//logic
+})
