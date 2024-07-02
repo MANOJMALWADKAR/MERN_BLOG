@@ -56,3 +56,12 @@
 //app.use((err, req, res, next) => {
 //logic
 })
+
+# Desing UI For SignUp
+
+# Add Functionality to SignUp Page
+
+-- first read the data from user input field(using onChange())
+-- store the into State
+-- Make request to Backend By sending user data to Signup API Route
+-- errorMessage and isLoading state add to it
